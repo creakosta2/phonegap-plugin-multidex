@@ -2,7 +2,11 @@ android {
     defaultConfig {
         multiDexEnabled true
     }
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:multidex:1.0.3'
+    }
 }
+
 dependencies {
-  compile 'com.android.support:multidex:1.0.1'
+  compile 'com.android.support:multidex:1.0.3'
 }
